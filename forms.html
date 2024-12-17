@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Формы Forms</title>
+</head>
+<body>
+
+	<h2>Регистрация пользователя</h2>
+	<fieldset>
+		<legend>Создание аккаунта</legend>
+		<form>
+			<label>Имя</label>
+			<input type="text" placeholder="Введи свое имя"><br>
+
+			<label>Фамилия</label>
+			<input type="text" placeholder="Введи свою фамилию"><br>
+
+			<label>Логин</label>
+			<input type="text" placeholder="Придумай логин" required><br>
+
+			<label>Email</label>
+			<input type="email" placeholder="Укажи email почту" required><br>
+
+			<label>Пароль</label>
+			<input type="password" placeholder="Создать пароль" required><br>
+
+			<label>Дата рождения</label>
+			<input type="date"><br>
+
+			<label>Пол</label>
+			<input type="radio" name="gen">муж | 
+			<input type="radio" name="gen">жен<br>
+
+			<label>Ваши устройства</label>
+			<input type="checkbox" checked>Смартфон | 
+			<input type="checkbox">Планшет | 
+			<input type="checkbox">Компьютер<br>
+
+			<label>Цвет вашей машины)</label>
+			<input type="color"><br>
+
+			<label>Фото профиля</label>
+			<input type="file"><br>
+
+			<label>Стаж работы</label>
+			<input type="number" min="0" max="30" value="0"><br>
+
+			<label>Сайт (если есть)</label>
+			<input type="url"><br>
+
+			<label>Сайт (если есть)</label>
+			<input type="range" min="1" max="10"><br>
+
+			<label>Ваш город</label>
+			<select>
+				<optgroup label="Россия">
+					<option>Грозный</option>
+					<option>Нальчик</option>
+					<option>Москва</option>
+				</optgroup>
+				<optgroup label="Иностраны">
+					<option>Париж</option>
+					<option>Нью-Йорк</option>
+					<option>Токио</option>
+					<option>другой</option>
+				</optgroup>
+			</select><br>
+
+			<br><br>
+			<input type="reset" value="Очистить">
+			<input type="submit" value="Потвердить">
+		</form>
+	</fieldset>
+
+	<h2>Регистрация пользователя в paragraph</h2>
+	<fieldset>
+		<legend>Создание аккаунта</legend>
+		<form>
+			<p>
+				<label>Имя</label>
+				<input type="text" placeholder="Введи свое имя">
+			</p>
+
+			<p>
+				<label>Фамилия</label>
+				<input type="text" placeholder="Введи свою фамилию">
+			</p>
+
+			<p>
+				<label>Логин</label>
+				<input type="text" placeholder="Придумай логин" required>
+			</p>
+
+			<p>
+				<label>Email</label>
+				<input type="email" placeholder="Укажи email почту" required>
+			</p>
+
+			<p>
+				<label>Пароль</label>
+				<input type="password" placeholder="Создать пароль" required>
+			</p>
+
+			<p>
+				<label>Дата рождения</label>
+				<input type="date"><br>
+			</p>
+
+			<p>
+				<label>Пол</label>
+				<input type="radio" name="gen">муж | 
+				<input type="radio" name="gen">жен
+			</p>
+
+			<p>
+				<label>Ваши устройства</label>
+				<input type="checkbox" checked>Смартфон | 
+				<input type="checkbox">Планшет | 
+				<input type="checkbox">Компьютер
+			</p>
+			<p>
+				<label>Цвет вашей машины)</label>
+				<input type="color">
+			</p>
+			<p>
+				<label>Фото профиля</label>
+				<input type="file">
+			</p>
+			<p>
+				<label>Стаж работы</label>
+				<input type="number" min="0" max="30" value="0">
+			</p>
+			<p>
+				<label>Сайт (если есть)</label>
+				<input type="url">
+			</p>
+			<p>
+				<label>Сайт (если есть)</label>
+				<input type="range" min="1" max="10">
+			</p>
+			<p>
+				<label>Ваш город</label>
+				<select>
+					<optgroup label="Россия">
+						<option>Грозный</option>
+						<option>Нальчик</option>
+						<option>Москва</option>
+					</optgroup>
+					<optgroup label="Иностраны">
+						<option>Париж</option>
+						<option>Нью-Йорк</option>
+						<option>Токио</option>
+						<option>другой</option>
+					</optgroup>
+				</select><br>
+			</p>
+			<p>
+				<input type="reset" value="Очистить">
+				<input type="submit" value="Потвердить">
+			</p>
+		</form>
+	</fieldset>
+
+	<h4>Форма в таблице</h4>
+	<table>
+		<form>
+			<tr>
+				<td><label>Имя</label></td>
+				<td><input type="text" placeholder="Введи свое имя"></td>
+			</tr>
+			<tr>
+				<td><label>Фамилтия</label></td>
+				<td><input type="text" placeholder="Введи свою фмилибю"></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Очистить"></td>
+				<td><input type="submit" value="Потвердить"></td>
+			</tr>
+		</form>
+	</table>	
+
+</body>
+</html>

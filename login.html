@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>Авторизация - Батухан</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<div class="topbar">
+			<div class="container">
+				<p>
+					Добро пожаловать на наш сайт <a href="#">гость</a>.
+				</p>
+				<p>
+					<a href="#"><i class="fa fa-instagram" style="font-size:17px;color:red"></i> Instagram</a>
+					<a href="#"><i class="fa fa-vk" style="font-size:17px;color:blue;"></i> VK</a>
+					<a href="#"><i class="fa fa-youtube-play" style="font-size:17px;color:red"></i> YouTube</a>
+					<a href="#"><i class="fas fa-play" style="font-size:17px"></i> Tiktok</a>
+					<a href="#"><i class="fa fa-facebook-f" style="font-size:17px;color:blue;"></i> Facebook</a>
+					&nbsp;|&nbsp;
+					<a href="login.html"><i style='font-size:17px' class='fas'>&#xf52b;</i> Вход</a>
+					<a href="register.html"><i class="fa fa-registered" style="font-size:17px"></i> Регистрация</a>
+					<!-- <a href="login.html">Аккаунт</a>
+					<a href="register.html">Выход</a> -->
+				</p>
+			</div>
+		</div>		
+		<div class="container">
+			<div class="midbar">
+				<!-- Лого и слоган -->
+				<div class="branding">
+					<h1><a href="index.html">Батухан</a></h1>
+					<p>Мой личный блог</p>				
+				</div>
+				<!-- Поисковик -->
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту..">
+						<input class="bg-primary text-white" type="submit" value="Найти">
+					</form>				
+				</div>
+				<!-- График работы -->
+				<div class="worktime">
+					<h3 style="color: #009688"><i class="fa fa-clock-o" aria-hidden="true"></i> График работы</h3>
+					<p><i class="fa fa-clock-o" style="font-size:17px"></i> 9:00-19:00 Пон-Суб</p>				
+				</div>
+				<!-- Адрес компании -->
+				<div class="address">
+					<h3 style="color: #009688"><i class="fa fa-phone" aria-hidden="true"></i>
+					+7 (928) 123-45-67</h3>
+					<p><i class="fa fa-envelope-o" aria-hidden="true"></i> info@mycompany.ru</p>				
+				</div>				
+			</div>
+		</div>
+		<div class="navmenu" style="background: #009688;">
+			<div class="container">
+				<!-- Ссылки меню -->
+				<a href="index.html">Главная</a>
+				<a href="articles.html">Статьи</a>
+				<a href="gallery.html">Галерея</a>
+				<a href="partners.html">Партнеры</a>
+				<a href="popular.html">Полупярные</a>
+				<a href="foryou.html">Рекомендации</a>
+				<a href="about.html">О блоге</a>
+				<a href="contact.html">Контакты</a>				
+			</div>	
+		</div>
+	</header>
+	<section style="background: #D8EDE8">
+		<div class="container">
+			<p class="breadcrumb mt-0">
+				<a href="index.html">Главная</a>
+				» Вход
+			</p>
+			<h2 class="page-title mb-0">Вход</h2>
+		</div>		
+	</section>
+
+	<section>
+		<div class="container">
+			<!-- Раздел новостей -->
+			<h2>Вход в личный кабинет</h2>
+			<p>Выполните вход в систему чтобы получить доступ к некоторым элементам сайта.</p>
+			
+			<fieldset>
+				<legend>Авторизация</legend>
+
+				<p style="color: red;" id="errMsg"></p>
+
+				<form name="myForm" onsubmit="return validateForm()">
+					<p>
+						<label>Логин</label>
+						<input type="text" name="username" placeholder="Придумай логин">
+					</p>
+					<p>
+						<label>Пароль</label>
+						<input type="password" name="userpass" placeholder="Создать пароль">
+					</p>
+					<p>
+						<input type="checkbox">Запомнить?
+					</p>
+					<p>
+						<input type="submit" value="Войти">
+						| &nbsp;
+						<a href="register.html">Нет аккаунта?</a>
+					</p>
+				</form>
+			</fieldset>
+
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer style="background: #009688; color: #fff;">
+		<div class="container">
+			<div class="row">
+				<div class="div">
+					<h4>О блоге</h4>
+					<ul> 
+						<li><a href="#"><i class="fa fa-window-restore"></i> Последние посты</a></li>
+						<li><a href="#"><i class="fa fa-window-restore"></i> Лонгриды</a></li>
+						<li><a href="#"><i class="fa fa-window-restore"></i> Моя история</a></li>
+						<li><a href="#"><i class="fa fa-window-restore"></i> Цель блога</a></li>
+						<li><a href="#"><i class="fa fa-window-restore"></i> Политика</a></li>
+						<li><a href="#"><i class="fa fa-window-restore"></i> Об о мне</a></li>
+					</ul>
+				</div>
+				<div class="div">
+					<h4>Категории</h4>
+					<ul> 
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Саморазвитие</a></li>
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Спорт и культура</a></li>
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> IT и наука</a></li>
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Моя категория</a></li>
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Путешествие</a></li>
+						<li><a href="#"><i class="fa fa-file-o" aria-hidden="true"></i> Бизнес</a></li>
+					</ul>
+				</div>
+				<div class="div">
+					<h4>Полезные ссылки</h4>
+					<ul> 
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Связаться</a></li>
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Сотрудничество</a></li>
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Оставить заявку</a></li>
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Лучшие посты</a></li>
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Наши ошибку?</a></li>
+						<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Архив</a></li>
+					</ul>
+				</div>
+				<div class="div">
+					<h4>Контакты и ссылки</h4>
+					<ul> 
+						<li><a href="#"><i class="fa fa-share-square-o"></i> +7 (928) 123-45-67</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o"></i> Email: info@batuhan.ru</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o"></i> Instagram</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o"></i> YouTube</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o"></i> Телеграм</a></li>
+						<li><a href="#"><i class="fa fa-share-square-o"></i> другие соц сети</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+				<p>&copy; Все права защищены | Разработка и поддержка сайта <a href="">My Instagram</a></p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		// Сообщение
+		var msg = document.getElementById('errMsg');
+	
+		function validateForm() {
+			let uname = document.forms["myForm"]["username"].value;
+			let upass = document.forms["myForm"]["userpass"].value;
+			
+			if (uname == "") {
+				// alert("Имя не может быть пустым");
+				msg.innerHTML = "Логин не может быть пустым";
+				return false;
+			} else if (uname.length < 3) {
+				msg.innerHTML = "Логин не может содержать меньше 3 букв";
+				return false;
+			} else if (upass == "") {
+				msg.innerHTML = "Пароль не может быть пустым";
+				return false;
+			} else if (upass.length < 6) {
+				msg.innerHTML = "Пароль не может содержать меньше 6 букв";
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
